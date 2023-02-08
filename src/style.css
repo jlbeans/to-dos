@@ -1,0 +1,129 @@
+
+.sidebar {
+  display: block;
+  position: absolute;
+  top: 123px;
+  bottom: 0;
+  width: 200px; 
+  background-color: lightgrey; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.all-projects {
+    display: block;
+    margin-right: 2rem;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+  
+body > * {
+    box-sizing: border-box;
+}
+
+html {
+    color: #484f4f;
+    font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.printed-proj {
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.new-proj-button {
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    color: blue;
+    border-radius: 50%;
+    margin: 16px 4px;
+    padding: 10px;
+}
+
+.proj-btn {
+    width: 100%;
+    padding: 12px 28px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #484f4f;
+}
+
+.proj-todos {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3.5rem;
+}
+
+.todo-card {
+    width: 75%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: .5rem 0;
+}
+
+.card-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-checkbox-title {
+    display: flex;
+    align-items: center;
+}
+
+.card-title {
+    padding-left: 10px;
+}
+
+.card-edit-btn, .card-del-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-trash, .fa-pen-to-square {
+    color: blue;
+}
+
+.card-date {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.main-header {
+  align-items: center;
+  text-align: left;
+  padding: 5px;
+  background-color: aliceblue;
+}
+
+.content {
+  width: 100vw;
+  min-height: 100vh;
+}
