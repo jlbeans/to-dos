@@ -21,12 +21,26 @@ export default class Todo {
 
     toggleCompleted() {
       this.completed = !this.completed;
+
+    
         /*let allProjects = getAllProjects();
     updateAllProjects(allProjects)*/
     }
 
+    lineThroughCompleted(e) {
+      if (this.completed) {
+        e.style.textDecoration = 'line-through';
+      } else {
+        e.style.textDecoration = 'none';
+      }
+    };
+
     get formattedDueDate() {
       return isValid(this.dueDate) ? format(this.dueDate, 'MM/dd/yy') : '';
+    }
+
+    get stringifiedDueDate() {
+      return isValid(this.dueDate) ? format(this.dueDate, 'yyyy-MM-dd') : '';
     }
 
 };
